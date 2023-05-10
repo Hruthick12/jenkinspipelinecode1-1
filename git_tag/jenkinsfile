@@ -5,7 +5,7 @@ pipeline {
 
              stage('Checkout code from Git.') {
             steps {
-                script{checkout_git.checkout_git("jenkinspipelinecode1")}
+                script{checkout_git.checkout_git("jenkinspipelinecode1","main")}
             }
              }
 
