@@ -10,7 +10,7 @@ pipeline {
              }
 
                   stage('create tag on git repo'){
-                    step {
+                    steps {
                         script{checkout_git.checkout_git("${tag}")}
                     }
                   }
